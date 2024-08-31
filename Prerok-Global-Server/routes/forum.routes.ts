@@ -6,7 +6,7 @@ const {
   deleteForum,
   likeForum,
   addComment,
-} = require("../controlers/forum.controllers");
+} = require("../controllers/forum.controllers");
 
 const router = require("express").Router();
 

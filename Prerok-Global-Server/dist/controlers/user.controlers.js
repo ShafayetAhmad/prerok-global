@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const user_model_1 = require("../models/user.model");
-//controler for get user by his email
+//controller for get user by his email
 exports.getAllUser = async (req, res) => {
     try {
         const userData = await user_model_1.User.find();
@@ -11,7 +11,7 @@ exports.getAllUser = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-//controler for get user by his email
+//controller for get user by his email
 exports.getUserByEmail = async (req, res) => {
     try {
         const email = req.params.email;
@@ -26,7 +26,7 @@ exports.getUserByEmail = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-//controler for create a new user
+//controller for create a new user
 exports.createUser = async (req, res) => {
     try {
         const userData = req.body;
@@ -47,7 +47,7 @@ exports.createUser = async (req, res) => {
         res.status(500).send({ error: error.message });
     }
 };
-//controler for update a existing user
+//controller for update a existing user
 exports.updateUser = async (req, res) => {
     try {
         // const user = req.user;
@@ -80,7 +80,7 @@ exports.updateUser = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-//controler for update role of a existing user
+//controller for update role of a existing user
 exports.updateRole = async (req, res) => {
     try {
         const data = req.body;

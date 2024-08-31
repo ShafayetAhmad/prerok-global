@@ -1,4 +1,4 @@
-import { addTestimonial, getAllTestimonials } from "../controlers/testimonial.controlers";
+import { addTestimonial, getAllTestimonials } from "../controllers/testimonial.controllers";
 
 const router = require('express').Router();
 

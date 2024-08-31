@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Address = require("../models/address.model");
-// controlers for get all addresses by userID
+// controllers for get all addresses by userID
 exports.getAddressByUserID = async (req, res) => {
     try {
         const id = req.params.id;
@@ -12,7 +12,7 @@ exports.getAddressByUserID = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for get address by address ID
+// controllers for get address by address ID
 exports.getAddressByID = async (req, res) => {
     try {
         const id = req.params.id;
@@ -23,7 +23,7 @@ exports.getAddressByID = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for create a new address
+// controllers for create a new address
 exports.createAddress = async (req, res) => {
     try {
         const address = req.body;
@@ -45,7 +45,7 @@ exports.createAddress = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for update a existing address
+// controllers for update a existing address
 exports.updateAddress = async (req, res) => {
     try {
         const id = req.params.id;
@@ -69,7 +69,7 @@ exports.updateAddress = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for delete a existing address
+// controllers for delete a existing address
 exports.deleteAddress = async (req, res) => {
     try {
         const id = req.params.id;

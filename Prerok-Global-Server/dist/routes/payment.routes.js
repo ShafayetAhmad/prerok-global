@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { createPaymentIntent, savePaymentInfo, getAllPaymentHistory } = require('../controlers/payment.controlers');
+const { createPaymentIntent, savePaymentInfo, getAllPaymentHistory } = require('../controllers/payment.controllers');
 const router = require('express').Router();
 // route for generate client secret for payment  
 router.post('/create-payment-intent', createPaymentIntent);

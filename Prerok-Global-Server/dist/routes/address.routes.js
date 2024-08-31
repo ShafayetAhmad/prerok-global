@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { createAddress, updateAddress, deleteAddress, getAddressByID, getAddressByUserID } = require('../controlers/address.controlers');
+const { createAddress, updateAddress, deleteAddress, getAddressByID, getAddressByUserID } = require('../controllers/address.controllers');
 const router = require('express').Router();
 // route for get all addresses by userID
 router.get("/get-all-address/:id", getAddressByUserID);

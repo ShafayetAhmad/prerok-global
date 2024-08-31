@@ -33,7 +33,7 @@ const transporter = nodemailer.createTransport({
         pass: process.env.GMAIL_APP_ID
     }
 });
-// controlers for get a booking by booking id
+// controllers for get a booking by booking id
 exports.getBookingByID = async (req, res) => {
     try {
         const id = req.params.id;
@@ -44,7 +44,7 @@ exports.getBookingByID = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for get all bokings by gmail
+// controllers for get all bokings by gmail
 exports.getBookingsByEmail = async (req, res) => {
     try {
         const email = req.params.email;
@@ -55,7 +55,7 @@ exports.getBookingsByEmail = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for get all bokings
+// controllers for get all bokings
 exports.getAllBookings = async (req, res) => {
     try {
         const bookings = await Booking.find();
@@ -65,7 +65,7 @@ exports.getAllBookings = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for update booking data by booking id
+// controllers for update booking data by booking id
 exports.updateBookingInfo = async (req, res) => {
     try {
         const id = req.params.id;
@@ -84,7 +84,7 @@ exports.updateBookingInfo = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for update tracking status by booking id
+// controllers for update tracking status by booking id
 exports.updateTrackingStatus = async (req, res) => {
     try {
         const id = req.params.id;
@@ -135,7 +135,7 @@ exports.updateTrackingStatus = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for update return status by booking id
+// controllers for update return status by booking id
 exports.updateReturnStatus = async (req, res) => {
     try {
         const id = req.params.id;
@@ -155,7 +155,7 @@ exports.updateReturnStatus = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for post a new booking
+// controllers for post a new booking
 exports.createBooking = async (req, res) => {
     try {
         const bookingData = req.body;
@@ -229,7 +229,7 @@ exports.createBooking = async (req, res) => {
         res.status(500).send({ message: error.message });
     }
 };
-// controlers for delete a existing booking
+// controllers for delete a existing booking
 exports.deleteBooking = async (req, res) => {
     try {
         const id = req.params.id;

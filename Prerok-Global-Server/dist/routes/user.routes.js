@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { createUser, getUserByEmail, updateUser, updateRole, getAllUser } = require('../controlers/user.controlers');
+const { createUser, getUserByEmail, updateUser, updateRole, getAllUser } = require('../controllers/user.controllers');
 const { verifyUser } = require('../middlewares/authMiddleware');
 const router = require('express').Router();
 //route for get all user

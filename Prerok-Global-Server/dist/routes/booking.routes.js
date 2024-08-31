@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { createBooking, getBookingsByEmail, updateTrackingStatus, getBookingByID, updateBookingInfo, deleteBooking, getAllBookings, updateReturnStatus } = require('../controlers/booking.controlers');
+const { createBooking, getBookingsByEmail, updateTrackingStatus, getBookingByID, updateBookingInfo, deleteBooking, getAllBookings, updateReturnStatus } = require('../controllers/booking.controllers');
 const router = require('express').Router();
 // router for get all bokings by gmail
 router.get("/get-booking/:id", getBookingByID);

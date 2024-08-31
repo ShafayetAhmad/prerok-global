@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { createForum, getForumById, getAllForums, updateForum, deleteForum, likeForum, addComment, } = require("../controlers/forum.controllers");
+const { createForum, getForumById, getAllForums, updateForum, deleteForum, likeForum, addComment, } = require("../controllers/forum.controllers");
 const router = require("express").Router();
 // Route to create a new forum post
 router.post("/create-forum-post", createForum);

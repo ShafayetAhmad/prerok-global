@@ -1,4 +1,4 @@
-const { createAddress, updateAddress, deleteAddress, getAddressByID, getAddressByUserID } = require('../controlers/address.controlers');
+const { createAddress, updateAddress, deleteAddress, getAddressByID, getAddressByUserID } = require('../controllers/address.controllers');
 
 const router = require('express').Router();
 
